@@ -39,19 +39,19 @@ const Chat = () => {
                 console.log(data.user, data.message)
             })
 
-            // return () => {
-            //     socket.emit('disconnect');
-            //     socket.off();
-            // }
+            return () => {
+//                 socket.emit('disconnect');
+                socket.off();
+            }
         }, []);
         useEffect(() => {
             socket.on('sendMessage', (data) => {
                     setMessages([...messages, data]);
                     console.log(data.user, data.message, data.id);
                 })
-                // return () => {
-                //     socket.off();
-                // }
+                return () => {
+                    socket.off();
+                }
         }, [messages]);
 
 
