@@ -62,7 +62,7 @@ const Chat = () => {
                 <
                 div className = "header" >
                 <
-                h2 > C CHAT < /h2> < /
+                h2 > APNA CHAT < /h2> < /
                 div > <
                 ReactScrollToBottom className = "chatBox" > {
                     messages.map((item, i) => < Message user = { item.id === id ? '' : item.user }
