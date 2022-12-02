@@ -5,7 +5,7 @@ import socketIo from 'socket.io-client';
 import Message from './Message';
 import ReactScrollToBottom from 'react-scroll-to-bottom';
 let socket;
-const ENDPOINT = "https://cchat-demo1.herokuapp.com/";
+const ENDPOINT = "https://elated-puce-barracuda.cyclic.app/";
 const Chat = () => {
         const [id, setid] = useState("");
         const [messages, setMessages] = useState([])
